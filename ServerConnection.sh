@@ -15,7 +15,7 @@ while true; do
   else
     echo $message >&3
     echo 'Response:'
-    cat <&3
+    timeout 1 cat <&3
     echo ''
   fi
 
